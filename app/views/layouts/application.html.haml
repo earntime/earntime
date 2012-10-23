@@ -1,0 +1,27 @@
+!!! 5
+%html
+  %head
+    %title EarnTime - The Time tracker that earns for you
+    = stylesheet_link_tag "application", :media=>"all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          =link_to "EarnTime", root_path, :class=>"brand"
+          %ul.nav
+            %li= link_to "Blog", "http://earntime.tumblr.com"
+            %li= link_to "Code", "https://github.com/earntime/earntime"
+            %li= link_to "Tracker", "https://www.pivotaltracker.com/projects/667581"
+    #content.container
+      =yield
+      .push
+    .footer
+      .container
+        .row
+          .content.span16
+            %ul
+              %li= link_to "Blog", "http://earntime.tumblr.com"
+              %li= link_to "Code", "https://github.com/earntime/earntime"
+              %li= link_to "Tracker", "https://www.pivotaltracker.com/projects/667581"

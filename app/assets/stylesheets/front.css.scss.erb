@@ -1,0 +1,37 @@
+// Place all the styles related to the front controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  padding-top: 40px;
+  background-image: url(<%=asset_path("clean_textile.png")%>);
+}
+html, body {
+  height: 100%;
+}
+#content {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+}
+.footer, .push {
+  height: 40px;
+}
+.footer {
+  background-color: #555;
+  .content{ 
+    color: #ddd;
+    text-align: center; 
+    a { color: #ddd; }
+  }
+}
+
+body.front {
+  .teaser {
+    margin: 20px 0;
+  }
+  h2.heading { 
+  text-align: center; 
+  font-family: 'Puritan', sans-serif;
+  }
+}
